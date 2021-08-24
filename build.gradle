@@ -1,0 +1,24 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'org.nitnelav'
+version '1.0-SNAPSHOT'
+
+repositories {
+    maven {
+        url "https://repo.matsim.org/repository/matsim/"
+    }
+    maven {
+        url "https://repo.osgeo.org/repository/release/"
+    }
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.8'
+    implementation 'org.matsim:matsim:13.0'
+    implementation 'org.locationtech.jts.io:jts-io-common:1.18.1'
+
+}
